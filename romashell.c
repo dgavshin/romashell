@@ -144,7 +144,7 @@ int		main(int argc, char **argv)
 		if (socket > 0)
 		{
 			dprintf(socket, "PING %s\n", id);
-			handle_session(socket, id, host);
+			handle_connect(socket, id, host);
 			close(socket);
 		}	
 		printf("Waiting for server...\n");
