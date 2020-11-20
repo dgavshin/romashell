@@ -1,11 +1,8 @@
 #!/usr/bin/env python3
 
-import argparse
 import select
 import socket
-import sys
 from server_config import *
-from datetime import timedelta
 
 ADMINS = set()
 INPUTS = list()
